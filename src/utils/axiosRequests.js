@@ -1,7 +1,6 @@
 import axios from "axios";
 
-const defaultApiBaseUrl = "http://localhost:3000/api";
-const baseUrl = process.env.API_BASE_URL || defaultApiBaseUrl;
+const baseUrl = "/api";
 axios.defaults.baseURL = baseUrl;
 
 export default {
