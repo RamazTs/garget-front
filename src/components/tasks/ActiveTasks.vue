@@ -7,7 +7,7 @@
       small
     >
       <v-card>
-        <v-card-title class="amber lighten-1 justify-end">
+        <v-card-title class="red lighten-1 justify-end">
           <h2 class="text-md-h4 text-sm-body-3 mr-4 white--text font-weight-light">
             {{ tile1.title }}
           </h2>
@@ -35,7 +35,7 @@
       small
     >
       <v-card>
-        <v-card-title class="cyan lighten-1">
+        <v-card-title class="yellow lighten-1">
           <v-icon
             class="mr-4"
             dark
@@ -64,7 +64,7 @@
       small
     >
       <v-card>
-        <v-card-title class="red lighten-1 justify-end">
+        <v-card-title class="green lighten-1 justify-end">
           <h2 class="text-md-h4 text-sm-body-3 mr-4 white--text font-weight-light">
             {{ tile3.title }}
           </h2>
@@ -86,7 +86,7 @@
     </v-timeline-item>
 
     <v-timeline-item
-      color="green lighten-1"
+      color="blue lighten-1"
       fill-dot
       right
       small
