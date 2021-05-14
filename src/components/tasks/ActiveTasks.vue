@@ -35,7 +35,7 @@
       small
     >
       <v-card>
-        <v-card-title class="yellow lighten-1">
+        <v-card-title class="yellow accent-4">
           <v-icon
             class="mr-4"
             dark
@@ -92,7 +92,7 @@
       small
     >
       <v-card>
-        <v-card-title class="green lighten-1">
+        <v-card-title class="blue lighten-1">
           <v-icon
             class="mr-4"
             dark
