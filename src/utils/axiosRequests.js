@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const baseUrl = "/api";
+const defaultApiBaseUrl = "http://localhost:3000/api";
+const baseUrl = process.env.API_BASE_URL || defaultApiBaseUrl;
 axios.defaults.baseURL = baseUrl;
 
 export default {
@@ -136,9 +137,10 @@ export default {
       throw error.response;
     }
   },
-  sendEditProjectRequest: async (token, userId, start, end, title, intervals, description = null) => {
+  sendEditProjectRequest: async (token, userId, start, end, title, intervals, id, description = null) => {
     try {
       return await axios.patch(`/projects/${userId}`, {
+          "_id": id,
           "title":  title,
           "description": description,
           "activeIntervals": intervals,

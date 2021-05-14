@@ -455,7 +455,8 @@ export default {
         end: this.selectedProject.endDate,
         title: this.selectedProject.title,
         description: this.selectedProject.description ?? null,
-        intervals: this.selectedProject.activeIntervals
+        intervals: this.selectedProject.activeIntervals,
+        id: this.selectedProject._id
       });
     },
     readyforEdit(project) {

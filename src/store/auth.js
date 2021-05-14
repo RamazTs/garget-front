@@ -177,9 +177,9 @@ export default {
         console.log(error);
       }
     },
-    editProject: async (ctx, {start, end, title, description, intervals}) => {
+    editProject: async (ctx, {start, end, title, description, intervals, id}) => {
       try {
-        await AxiosRequests.sendEditProjectRequest(ctx.state.token, ctx.state.userId, start, end, title, intervals, description);
+        await AxiosRequests.sendEditProjectRequest(ctx.state.token, ctx.state.userId, start, end, title, intervals, id, description);
         await ctx.dispatch("fetchOtherProjects")
       } catch (error) {
         console.log(error);
