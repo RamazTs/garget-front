@@ -12,10 +12,10 @@
         dark>
         <h1 class="text-center text-md-h4 text-sm-body-3 white--text">Overall Time Spent</h1>
         <div class="flex">
-          <h2 class="text-md-h6 text-sm-body-2">Time Spent On Activities: {{ overallHours.totalTime / 60}} hrs</h2>
+          <h2 class="text-md-h6 text-sm-body-2">Time Spent On Activities: {{ (overallHours.totalTime / 60).toFixed(2)}} hrs</h2>
         </div>
         <div>
-          <h2 class="text-md-h6 text-sm-body-2">Average time spent per day: {{ overallHours.avg / 60}} hrs</h2>
+          <h2 class="text-md-h6 text-sm-body-2">Average time spent per day: {{ (overallHours.avg / 60).toFixed(2) }} hrs</h2>
         </div>
       </v-card>
 

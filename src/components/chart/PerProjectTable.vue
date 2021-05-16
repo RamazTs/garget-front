@@ -70,8 +70,9 @@ export default {
     },
     series() {
       let tiles = [0, 0, 0, 0];
+      console.log(this.tiles)
       if (this.tiles.length > 0)
-        tiles = this.tiles.map(x => (x.totalWorked / 60).toFixed(1));
+        tiles = this.tiles.map(x => (x.totalWorked / 60).toFixed(2));
       return [{
         name: "Hours Worked",
         data: tiles
